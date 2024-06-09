@@ -1,0 +1,12 @@
+01. Importe o Controller para a Route, no arquivo route>>web.php
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController; //Import
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/product', [ProductController::class, 'index'])->name('product.index');
