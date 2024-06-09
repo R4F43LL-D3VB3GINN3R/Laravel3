@@ -1,0 +1,18 @@
+----------------------------------------------------------------------
+01. No terminal cmd digite: php artisan make:migration create_nometabela
+02. Na pasta migration você poderá notar que a sua tabela foi criada.
+03. Realiza esta alteração para inserir campos.
+
+    public function up(): void
+    {
+        Schema::create('products', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->integer('qty');
+            $table->decimal('price');
+            $table->text('description');
+            $table->timestamps();
+        });
+    }
+
+04.Digite no terminal cmd: php artisan migrate, para atualizar as informações da tabela.
