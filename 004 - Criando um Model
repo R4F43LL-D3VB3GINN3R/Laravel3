@@ -1,0 +1,28 @@
+----------------------------------------------------------------------------
+01. No terminal cmd, digite: php artisan make:model NomedoModel
+02. O nome do model deve remeter à tabela e por convenção deve estar no singular.
+03. Vá em App>>Model para observar o arquivo criado.
+04. No arquivo você deve inserir os campos da tabela referente ao model,
+Sendo estes campos apenas os que devem receber dados.
+
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Product extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+
+        'name',
+        'qty',
+        'price',
+        'description'
+
+    ];
+
+}
