@@ -1,3 +1,5 @@
+01.Na pasta routes>>web, realiza as seguintes alterações...
+
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -6,4 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/product', [ProductController::class, ''])->name('product.index');
+Route::get('/product', [ProductController::class, 'index'])->name('product.index');
+
+02.Depois de criar esta rota no navegador, ela acessará a função index no arquivo Controller referente,
+no caso ProductController.
