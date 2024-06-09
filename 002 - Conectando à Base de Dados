@@ -1,0 +1,17 @@
+------------------------------------------------------------------------------------------------------------
+01. Ative o Apache e o Mysql Server no Xammp.
+02. Abra o VsCode e entre na pasta do projeto criado em htdocs.
+03. Crie uma base de dados no MysqlServer.
+04. Acesse o arquivo .env
+---------------------------
+05. Realiza as alterações.
+
+DB_CONNECTION=mysql    "Tipo de Base de Dados"
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=app_crud   "Nome da BD criada"
+DB_USERNAME=root
+DB_PASSWORD=
+
+---------------------------
+06. Abra o Terminal cmd no VSCode e digite php artisan migrate
