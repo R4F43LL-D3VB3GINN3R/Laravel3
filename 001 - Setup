@@ -1,0 +1,7 @@
+-----------------------------------------------------------------------------------------------------------------
+1. Vá na pasta htdocs do Xammp.
+2. Segure Shift e clique com o botão direito dentro da pasta.
+3. Abra o PowerShell dentro da pasta.
+4. Cole este código composer create-project laravel/laravel example-app
+5. Caso dê erro, abra o PHP.ini na pasta do php e libere a extensão .zip.
+-----------------------------------------------------------------------------------------------------------------
