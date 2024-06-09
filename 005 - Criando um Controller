@@ -1,0 +1,2 @@
+-------------------------------------------------------------------------------------------------
+01.Vá até o terminal cmd e digite: php artisan make:controller nomeController
