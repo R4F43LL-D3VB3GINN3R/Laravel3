@@ -1,0 +1,15 @@
+01.Depois de criar uma rota para o controller...
+02.Vá até o arquivo do Controller e redirecione-o para a view.
+
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class ProductController extends Controller
+{
+    public function index() {
+        return view('product.index');
+    }
+}
